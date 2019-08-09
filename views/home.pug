@@ -1,0 +1,39 @@
+doctype html
+html(lang = 'en')
+    head
+        title Meme Lord
+        meta(name  = "viewport" content = "width=device-width, initial-scale=1")
+        link(rel = "stylesheet" type = "text/css" href = "/styles/nav.css")
+        link(rel = "stylesheet" type = "text/css" href = "/styles/main.css")
+        link(rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+        script(src = "https://code.jquery.com/jquery-3.3.1.min.js" integrity = "sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin = "anonymous")
+        script(src = '/scripts/responsive.js')
+    body
+        div.topnav#Topnav
+            a.icon(href = 'javascript:void(0);' onclick = 'checkResponsive()')
+                i.fa.fa-bars
+            span.title MEME LORD
+            a#pages
+            a.active(href = '/home') Home
+            a(href = '/kings') Meme Kings
+            a(href = '/browse') Browse All/Post
+            a(href = '/category') Category
+        div#info
+            div
+                span.shdwText Become A Meme King!
+            img.crwnImg(src = '/styles/fontImage/crown1.png')
+            br
+            span.shdwText Here is how:
+            span.shdwText It's simple! Post delicious memes and get liked! The top five most liked memes will be crowned!
+            div
+                span.redText Rules:
+            span.normalText 1. Memes only! Posts other than memes will be deleted and may result in a ban!
+            br
+            br
+            span.normalText 2. Memes that are considered too SPICY or inappropriate may be subject to deletion.
+            br
+            br
+            span.normalText 3. Farming likes with fake accounts will lead to the boot!
+            br
+            br
+            span.normalText 4. If your meme is so bad it never gets a like, you will be terminated by the meme king!

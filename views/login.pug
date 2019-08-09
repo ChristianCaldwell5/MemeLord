@@ -1,0 +1,17 @@
+doctype html
+html(lang = 'en')
+    head
+        title Login
+        meta(name  = "viewport" content = "width=device-width, initial-scale=1")
+        link(rel = "stylesheet" type = "text/css" href = "/styles/login.css")
+        script(src = '/scripts/login.js')
+    body
+        div#backImg
+        div#mainTitle MEME LORD
+        div#loginContainer
+            form(action = '/login' method = 'POST')
+                input.inputField#username(type = 'text' name='username' placeholder = 'Username' maxlength = '25')
+                input.inputField#password(type = 'password' name='password' placeholder = 'Password' maxlength = '25')
+                input#loginBtn(type = 'submit' name='login' value = 'Login')
+                input#signUp(type = 'button' value = 'Sign-Up' onclick = 'createUser()')
+            img.crownImg(src = "/styles/fontImage/crown1.png")

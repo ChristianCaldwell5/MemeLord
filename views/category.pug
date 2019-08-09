@@ -1,0 +1,34 @@
+doctype html
+html(lang = 'en')
+    head
+        title Categories
+        meta(name  = "viewport" content = "width=device-width, initial-scale=1")
+        link(rel = "stylesheet" type = "text/css" href = "/styles/nav.css")
+        link(rel = "stylesheet" type = "text/css" href = "/styles/main.css")
+        link(rel = "stylesheet" type = "text/css" href = "/styles/browse.css")
+        link(rel = "stylesheet" type = "text/css" href = "/styles/category.css")
+        link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+        link(rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+        script(src = '/socket.io/socket.io.js')
+        script(src = "https://code.jquery.com/jquery-3.3.1.min.js" integrity = "sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin = "anonymous")
+        script(src = '/scripts/responsive.js')
+        script(src = '/scripts/browse.js')
+    body
+        div.topnav#Topnav
+            a.icon(href = 'javascript:void(0);' onclick = 'checkResponsive()')
+                i.fa.fa-bars
+            span.title MEME LORD
+            a#pages
+            a(href = '/home') Home
+            a(href = '/kings') Meme Kings
+            a(href = '/browse') Browse All/Post
+            a.active(href = '/category') Category
+            
+        div.leftTitle
+            div#centerTxt
+                span.shdwText Select A Category:
+        
+        for category in categories
+            div.catDiv
+                a.cat(href='/category/'+category name=category) #{category}
+            br

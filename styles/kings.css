@@ -1,0 +1,837 @@
+@keyframes gold{
+        0%{
+            background-color: white;
+        }
+        50%{
+            background-color: #FFD700;
+        }
+        100%{
+            background-color: white;
+        }  
+}
+
+@keyframes silver{
+        0%{
+            background-color: white;
+        }
+        50%{
+            background-color: #C0C0C0;
+        }
+        100%{
+            background-color: white;
+        }  
+}
+
+@keyframes bronze{
+        0%{
+            background-color: white;
+        }
+        50%{
+            background-color: #cd7f32;
+        }
+        100%{
+            background-color: white;
+        }  
+}
+
+@keyframes king{
+        0%{
+            background-color: white;
+        }
+        50%{
+            background-color: #E02A03;
+        }
+        100%{
+            background-color: white;
+        }  
+}
+
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+/* Styles */
+      
+      .kings{
+          width: 93%;
+          margin: auto;
+          margin-top: 10px;
+          animation: gold 3s infinite;
+          padding: 5px;
+      }
+      
+      .kings + .kings{
+          width: 93%;
+          margin: auto;
+          margin-top: 10px;
+          animation: silver 3s infinite;
+          padding: 5px;
+      }
+      
+      .kings + .kings + .kings{
+          width: 93%;
+          margin: auto;
+          margin-top: 10px;
+          animation: bronze 3s infinite;
+          padding: 5px;
+      }
+      
+      .kings + .kings + .kings + .kings{
+          width: 93%;
+          margin: auto;
+          margin-top: 10px;
+          animation: king 3s infinite;
+          padding: 5px;
+      }
+      
+      .kings + .kings + .kings + .kings + .kings{
+          width: 93%;
+          margin: auto;
+          margin-top: 10px;
+          animation: king 3s infinite;
+          padding: 5px;
+      }
+      
+    .memeContainer {
+        background-color: white;
+        border: 4px outset black;
+        color: black;
+        width: 90%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+    
+    .header {
+        background-color:mediumpurple;
+        color:white;
+        position: relative;
+        padding: 10px;
+        border: 2px solid black;
+        text-align: center;
+    }
+    
+    .category {
+        font-size: 36px;
+    }
+    
+    .memeTitle {
+        margin: auto;
+        font-size: 36px;
+    }
+    
+    .label {
+        font-size: 36px;
+        margin-right: 5px;
+    }
+    
+    .catagoryContainer {
+        
+    }
+    
+    .photo {
+        text-align: center;
+    }
+    .thumb {
+        
+    }
+    .comment {
+        
+    }
+    .thumbButton {
+        margin-right: 5px;
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+    .commentButton {
+        margin-left: 10px;
+        margin-right: 5px;
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+    
+    .memeImg {
+        max-width: 90%;
+        border: 2px solid black;
+    }
+    
+    hr.styleHR{
+        border: 4px solid black;
+        border-radius: 5px;
+    }
+      
+    .addComment{
+        width: 90%;
+        font-size: 20px;
+        border: 2px solid black;
+        margin: 10px auto;
+    }
+      
+    .commentContainer{
+/*        display: flex;*/
+        width: 95%;
+        font-size: 20px;
+        color: black;
+        margin-top: 10px;
+        margin-left: 0;
+        padding-left: 0;
+    }
+      
+    .userName{
+        width: 100%;
+        font-weight: bold;
+    }
+    
+    .commentContent{
+        width: 100%;
+        padding-left: 0;
+        margin-left: 0;
+        list-style-type: none;
+        list-style: none;
+        text-indent: none;
+        flex-grow: 1;
+    }
+    
+    .commentWrapper {
+        display: none;
+    }
+    
+    .commentTitle{
+        margin: 0;
+        font-weight: bolder;
+        font-size: 30px;
+        color: black;
+    }
+    
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+/* Styles */
+      
+      .kings{
+          width: 83%;
+          margin: auto;
+          margin-top: 10px;
+          animation: gold 3s infinite;
+          padding: 5px;
+      }
+      
+      .kings + .kings{
+          width: 83%;
+          margin: auto;
+          margin-top: 10px;
+          animation: silver 3s infinite;
+          padding: 5px;
+      }
+      
+      .kings + .kings + .kings{
+          width: 83%;
+          margin: auto;
+          margin-top: 10px;
+          animation: bronze 3s infinite;
+          padding: 5px;
+      }
+      
+      .kings + .kings + .kings + .kings{
+          width: 83%;
+          margin: auto;
+          margin-top: 10px;
+          animation: king 3s infinite;
+          padding: 5px;
+      }
+      
+      .kings + .kings + .kings + .kings + .kings{
+          width: 83%;
+          margin: auto;
+          margin-top: 10px;
+          animation: king 3s infinite;
+          padding: 5px;
+      }
+    
+    .memeContainer {
+        background-color: white;
+        color: black;
+        width: 82%;
+        border: 4px outset black;
+        margin: 10px auto;
+        padding: 10px;
+    }
+    
+    .header {
+        background-color:mediumpurple;
+        color:white;
+        position: relative;
+        padding: 10px;
+        border: 2px solid black;
+        text-align: center;
+    }
+    
+    .category {
+        font-size: 36px;
+    }
+    
+    .memeTitle {
+        margin: auto;
+        font-size: 36px;
+    }
+    
+    .label {
+        font-size: 36px;
+        margin-right: 5px;
+    }
+    
+    .catagoryContainer {
+        
+    }
+    
+    .photo {
+        text-align: center;
+    }
+    .thumb {
+        
+    }
+    .comment {
+        
+    }
+    .thumbButton {
+        margin-right: 5px;
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+    .commentButton {
+        margin-left: 10px;
+        margin-right: 5px;
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+    
+    .memeImg {
+        max-width: 90%;
+        max-height: 70vh;
+        border: 2px solid black;
+    }
+    
+    hr.styleHR{
+        border: 4px solid black;
+        border-radius: 5px;
+    }
+      
+      .addComment{
+          width: 90%;
+          font-size: 20px;
+          border: 2px solid black;
+          margin: 10px auto;
+      }
+      
+      .commentContainer{
+/*        display: flex;*/
+        width: 95%;
+        font-size: 20px;
+        color: black;
+        margin-top: 10px;
+        margin-left: 0;
+        padding-left: 0;
+    }
+      
+    .userName{
+        width: 100%;
+        font-weight: bold;
+    }
+    
+    .commentContent{
+        width: 100%;
+        padding-left: 0;
+        margin-left: 0;
+        list-style-type: none;
+        list-style: none;
+        text-indent: none;
+        flex-grow: 1;
+    }
+    
+    .commentWrapper {
+        display: none;
+    }
+    
+    .commentTitle{
+        margin: 0;
+        font-weight: bolder;
+        font-size: 30px;
+        color: black;
+    }
+    
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+/* Styles */
+    
+    .kings{
+          width: 82%;
+          margin: auto;
+          margin-top: 10px;
+          animation: gold 3s infinite;
+          padding: 5px;
+      }
+      
+      .kings + .kings{
+          width: 82%;
+          margin: auto;
+          margin-top: 10px;
+          animation: silver 3s infinite;
+          padding: 5px;
+      }
+      
+      .kings + .kings + .kings{
+          width: 82%;
+          margin: auto;
+          margin-top: 10px;
+          animation: bronze 3s infinite;
+          padding: 5px;
+      }
+      
+      .kings + .kings + .kings + .kings{
+          width: 82%;
+          margin: auto;
+          margin-top: 10px;
+          animation: king 3s infinite;
+          padding: 5px;
+      }
+      
+      .kings + .kings + .kings + .kings + .kings{
+          width: 82%;
+          margin: auto;
+          margin-top: 10px;
+          animation: king 3s infinite;
+          padding: 5px;
+      }
+    
+    .memeContainer {
+        background-color: white;
+        color: black;
+        width: 80%;
+        border: 4px outset black;
+        margin: 10px auto;
+        padding: 10px;
+    }
+    
+    .header {
+        background-color:mediumpurple;
+        color:white;
+        position: relative;
+        padding: 10px;
+        border: 2px solid black;
+        text-align: center;
+    }
+    
+    .category {
+        font-size: 36px;
+    }
+    
+    .memeTitle {
+        margin: auto;
+        font-size: 36px;
+    }
+    
+    .label {
+        font-size: 36px;
+        margin-right: 5px;
+    }
+    
+    .catagoryContainer {
+        
+    }
+    
+    .photo {
+        text-align: center;
+    }
+    .thumb {
+        
+    }
+    .comment {
+        
+    }
+    .thumbButton {
+        margin-right: 5px;
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+    .commentButton {
+        margin-left: 10px;
+        margin-right: 5px;
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+    
+    .memeImg {
+        max-width: 70%;
+        max-height: 70vh;
+        border: 2px solid black;
+    }
+    
+    hr.styleHR{
+        border: 4px solid black;
+        border-radius: 5px;
+    }
+    
+    .addComment{
+          width: 90%;
+          font-size: 20px;
+          border: 2px solid black;
+          margin: 10px auto;
+      }
+      
+      .commentContainer{
+        display: flex;
+        width: 95%;
+        font-size: 20px;
+        color: black;
+/*        margin-top: 10px;*/
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+      
+    .userName{
+        width: 20%;
+        font-weight: bold;
+    }
+    
+    .commentContent{
+        width: 60%;
+        padding-left: 0;
+        list-style-type: none;
+        list-style: none;
+        flex-grow: 1;
+    }
+    
+    .commentWrapper {
+        display: none;
+        margin-left: 0;
+    }
+    
+    .commentTitle{
+        margin: 0;
+        font-weight: bolder;
+        font-size: 30px;
+        color: black;
+    }
+    
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+/* Styles */
+    
+    .kings{
+          width: 71%;
+          margin: auto;
+          margin-top: 10px;
+          animation: gold 3s infinite;
+          padding: 5px;
+      }
+      
+      .kings + .kings{
+          width: 71%;
+          margin: auto;
+          margin-top: 10px;
+          animation: silver 3s infinite;
+          padding: 5px;
+      }
+      
+      .kings + .kings + .kings{
+          width: 71%;
+          margin: auto;
+          margin-top: 10px;
+          animation: bronze 3s infinite;
+          padding: 5px;
+      }
+      
+      .kings + .kings + .kings + .kings{
+          width: 71%;
+          margin: auto;
+          margin-top: 10px;
+          animation: king 3s infinite;
+          padding: 5px;
+      }
+      
+      .kings + .kings + .kings + .kings + .kings{
+          width: 71%;
+          margin: auto;
+          margin-top: 10px;
+          animation: king 3s infinite;
+          padding: 5px;
+      }
+    
+    .memeContainer {
+        background-color: white;
+        color: black;
+        width: 70%;
+        border: 4px outset black;
+        margin: 10px auto;
+        padding: 10px;
+    }
+    
+    .header {
+        background-color:mediumpurple;
+        color:white;
+        position: relative;
+        padding: 10px;
+        border: 2px solid black;
+        text-align: center;
+    }
+    
+    .category {
+        font-size: 36px;
+    }
+    
+    .memeTitle {
+        margin: auto;
+        font-size: 36px;
+    }
+    
+    .label {
+        font-size: 36px;
+        margin-right: 5px;
+    }
+    
+    .catagoryContainer {
+        
+    }
+    
+    .photo {
+        text-align: center;
+    }
+    .thumb {
+        
+    }
+    .comment {
+        
+    }
+    .thumbButton {
+        margin-right: 5px;
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+    .commentButton {
+        margin-left: 10px;
+        margin-right: 5px;
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+    
+    .memeImg {
+        max-width: 70%;
+        max-height: 70vh;
+        border: 2px solid black;
+    }
+    
+    hr.styleHR{
+        border: 4px solid black;
+        border-radius: 5px;
+    }
+    
+.addComment{
+          width: 90%;
+          font-size: 20px;
+          border: 2px solid black;
+          margin: 10px auto;
+    }
+    
+    .commentContainer{
+        display: flex;
+        width: 95%;
+        font-size: 20px;
+        color: black;
+/*        margin-top: 10px;*/
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+      
+    .userName{
+        width: 20%;
+        font-weight: bold;
+    }
+    
+    .commentContent{
+        width: 60%;
+        padding-left: 0;
+        list-style-type: none;
+        list-style: none;
+        flex-grow: 1;
+    }
+    
+    .commentWrapper {
+        display: none;
+        margin-left: 0;
+    }
+    
+    .commentTitle{
+        margin: 0;
+        font-weight: bolder;
+        font-size: 30px;
+        color: black;
+    }
+    
+    
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+/* Styles */
+    
+    .kings{
+          width: 71%;
+          margin: auto;
+          margin-top: 10px;
+          animation: gold 3s infinite;
+          padding: 5px;
+      }
+      
+      .kings + .kings{
+          width: 71%;
+          margin: auto;
+          margin-top: 10px;
+          animation: silver 3s infinite;
+          padding: 5px;
+      }
+      
+      .kings + .kings + .kings{
+          width: 71%;
+          margin: auto;
+          margin-top: 10px;
+          animation: bronze 3s infinite;
+          padding: 5px;
+      }
+      
+      .kings + .kings + .kings + .kings{
+          width: 71%;
+          margin: auto;
+          margin-top: 10px;
+          animation: king 3s infinite;
+          padding: 5px;
+      }
+      
+      .kings + .kings + .kings + .kings + .kings{
+          width: 71%;
+          margin: auto;
+          margin-top: 10px;
+          animation: king 3s infinite;
+          padding: 5px;
+      }
+    
+    .memeContainer {
+        background-color: white;
+        color: black;
+        border: 4px outset black;
+        width: 70%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+    
+    .header {
+        background-color:mediumpurple;
+        color:white;
+        padding: 50px;
+        border: 2px solid black;
+    }
+    
+    .category {
+        font-size: 36px;
+    }
+    
+    .memeTitle {
+        margin: auto;
+        float: left;
+        font-size: 36px;
+    }
+    
+    .label {
+        font-size: 36px;
+        margin-right: 5px;
+    }
+    
+    .catagoryContainer {
+        float: right;
+    }
+    
+    .photo {
+        text-align: center;
+    }
+    .thumb {
+        
+    }
+    .comment {
+        
+    }
+    .thumbButton {
+        margin-right: 5px;
+        cursor: pointer;
+    }
+    .commentButton {
+        margin-left: 10px;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+    
+    .memeImg {
+        max-width: 70%;
+        max-height: 60vh;
+        border: 2px solid black;
+    }
+    
+    hr.styleHR{
+        border: 4px solid black;
+        border-radius: 5px;
+    }
+    
+    .addComment{
+        width: 99%;
+        font-size: 20px;
+        border: 2px solid black;
+        margin: 10px auto;
+    }
+    
+    .commentContainer{
+        display: flex;
+        width: 95%;
+        font-size: 20px;
+        color: black;
+/*        margin-top: 10px;*/
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+      
+    .userName{
+        width: 20%;
+        font-weight: bold;
+    }
+    
+    .commentContent{
+        width: 60%;
+        padding-left: 0;
+        list-style-type: none;
+        list-style: none;
+        flex-grow: 1;
+    }
+    
+    .commentWrapper {
+        display: none;
+        margin-left: 0;
+    }
+    
+    .commentTitle{
+        margin: 0;
+        font-weight: bolder;
+        font-size: 30px;
+        color: black;
+    }
+}

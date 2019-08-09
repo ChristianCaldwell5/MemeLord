@@ -1,0 +1,29 @@
+{
+  "name": "memelord",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smheffron/MemeLord.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smheffron/MemeLord/issues"
+  },
+  "homepage": "https://github.com/smheffron/MemeLord#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-fileupload": "^1.0.0",
+    "formidable": "^1.2.1",
+    "mongoose": "^5.3.12",
+    "multer": "^1.4.1",
+    "pug": "^2.0.3",
+    "socket.io": "^2.1.1"
+  }
+}

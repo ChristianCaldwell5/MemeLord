@@ -1,0 +1,64 @@
+doctype html
+html(lang = 'en')
+    head
+        title Category
+        meta(name  = "viewport" content = "width=device-width, initial-scale=1")
+        link(rel = "stylesheet" type = "text/css" href = "/styles/nav.css")
+        link(rel = "stylesheet" type = "text/css" href = "/styles/main.css")
+        link(rel = "stylesheet" type = "text/css" href = "/styles/category.css")
+        link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+        link(rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+        script(src = '/socket.io/socket.io.js')
+        script(src = "https://code.jquery.com/jquery-3.3.1.min.js" integrity = "sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin = "anonymous")
+        script(src = '/scripts/responsive.js')
+        script(src = '/scripts/categories.js')
+    body
+        div.topnav#Topnav
+            a.icon(href = 'javascript:void(0);' onclick = 'checkResponsive()')
+                i.fa.fa-bars
+            span.title MEME LORD
+            a#pages
+            a(href = '/home') Home
+            a(href = '/kings') Meme Kings
+            a(href = '/browse') Browse All/Post
+            a.active(href = '/category') Category
+        
+        for meme in memes
+            div.memeContainer
+                div.header
+                    span.memeTitle #{meme.title}                    
+                    
+                    div.catagoryContainer
+                        i.material-icons.category.label label
+                        span.category #{meme.category}
+                br
+                
+                div.content
+                    div.photo 
+                        img.memeImg(src='/memeUploads/'+meme.imageSrc alt="meme")
+                    br
+                    hr.styleHR
+                    div.footer
+                        button(class='thumbButton' name=meme._id)
+                            i.material-icons.thumb thumb_up
+                        span(id = 'likes-'+meme._id) #{meme.likes}
+                        
+                        button(class='commentButton' name=meme._id)
+                            i.material-icons.comment comment       
+                        span(id = 'comments-'+meme._id) #{meme.comments.length}
+                        br
+                        
+                        div.commentWrapper(id = "commentSectionWrapper"+meme.id)
+                        
+                            input.addComment(type = 'text' id = "commentSection"+meme.id placeholder = "Add a comment..." maxlength = '250')
+                            button.postCommentBtn.submitBtn(name = meme._id) Post
+                            br
+                            hr.styleHR
+                            span.commentTitle Comments:
+                            ul(id = 'commentList-'+meme._id)
+                                for comment in meme.comments
+                                    div.commentContainer
+                                        div.userName Anonymous User:
+                                        div.commentContent
+                                            span #{comment}
+                                    hr
